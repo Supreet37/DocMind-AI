@@ -1,164 +1,377 @@
-# DocMind AI 📚
+# 🚀 DocMind AI
 
-An intelligent, AI-powered PDF knowledge platform that transforms how you interact with documents. Upload PDFs, extract insights, generate summaries, create flashcards, and chat with your documents - all powered by cutting-edge AI.
+<div align="center">
 
-## 🚀 Features
+### Transform PDFs into Knowledge with AI
 
-### Core Tools
-- **Semantic Search** - AI-powered search across PDF documents with intelligent retrieval
-- **PDF Summarizer** - Generate concise summaries from PDF content using extractive & abstractive methods
-- **Key Points Extractor** - Automatically extract key phrases and important concepts
-- **Notes Maker** - Create, edit, and manage notes with AI assistance
-- **Voice Summarizer** - Convert text to speech for audio learning and memorization
+*Upload • Search • Summarize • Chat • Learn*
 
-### AI Features
-- **DocMind GPT** - Chat with your documents using RAG (Retrieval-Augmented Generation)
-- **YouTube Summarizer** - Summarize any YouTube video using Groq's LLaMA 3.3 70B
-- **AI Image Notes** - Extract text from PDF pages and generate summaries, flashcards, or key points
+![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge\&logo=react)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green?style=for-the-badge\&logo=fastapi)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge\&logo=typescript)
+![Python](https://img.shields.io/badge/Python-3.9+-yellow?style=for-the-badge\&logo=python)
+![AI Powered](https://img.shields.io/badge/AI-Powered-purple?style=for-the-badge)
 
-### User Experience
-- **Dark/Light Mode** - Seamless theme switching
-- **Responsive Design** - Works on desktop, tablet, and mobile
-- **Real-time Updates** - Live progress tracking and animations
-- **Export Capabilities** - Download notes, summaries, and key points as text files
+</div>
 
-## 🛠️ Tech Stack
+---
 
-### Frontend
-| Technology | Purpose |
-|------------|---------|
-| React 18 | UI Framework |
-| TypeScript | Type Safety |
-| Vite | Build Tool & Dev Server |
-| Tailwind CSS | Styling |
-| Framer Motion | Animations |
-| Lucide React | Icons |
-| TanStack Query | Data Fetching & Caching |
-| Sonner | Toast Notifications |
-| Next Themes | Theme Management |
+## 📖 Overview
 
-### Backend
-| Technology | Purpose |
-|------------|---------|
-| FastAPI | REST API Framework |
-| Python 3.9+ | Programming Language |
-| PyPDF2 | PDF Text Extraction |
-| Sentence Transformers | Semantic Embeddings |
-| FAISS | Vector Search |
-| Uvicorn | ASGI Server |
+**DocMind AI** is an intelligent document-learning platform that allows users to upload PDFs and interact with them using advanced AI models.
 
-### AI/ML
-| Model | Purpose |
-|-------|---------|
-| Groq LLaMA 3.3 70B | Text generation, summarization, Q&A |
-| Facebook BART | Abstractive summarization |
-| ML6 Keyphrase Extraction | Key point extraction |
-| Salesforce BLIP | Image captioning |
-| OpenAI Text Embeddings | Semantic search |
+Whether you're a student, researcher, or professional, DocMind AI helps you:
 
-## 📁 Project Structure
+* 🔍 Search information instantly
+* 📝 Generate notes automatically
+* 📚 Create study materials
+* 🤖 Chat with documents
+* 🎧 Convert knowledge into audio
+
+---
+
+# ✨ Features
+
+## 🔎 Semantic PDF Search
+
+Search across PDF documents using vector embeddings and semantic retrieval.
+
+### Highlights
+
+* AI-powered document understanding
+* Context-aware search results
+* Fast retrieval with FAISS
+* Highlighted matches
+
+---
+
+## 📄 PDF Summarizer
+
+Generate concise summaries from lengthy documents.
+
+### Supports
+
+* Extractive Summarization
+* Abstractive Summarization
+* AI-generated insights
+
+---
+
+## 🧠 DocMind GPT
+
+Chat directly with your PDFs using Retrieval-Augmented Generation (RAG).
+
+### Capabilities
+
+* Ask questions
+* Get contextual answers
+* Multi-document understanding
+* Conversation history
+
+---
+
+## 📝 Notes Generator
+
+Turn PDFs into organized notes automatically.
+
+### Features
+
+* Smart note creation
+* Editable notes
+* Export support
+* AI assistance
+
+---
+
+## 🔑 Key Points Extraction
+
+Extract important concepts instantly.
+
+### Outputs
+
+* Key phrases
+* Important topics
+* Study points
+* Revision notes
+
+---
+
+## 🎧 Voice Summarizer
+
+Convert generated summaries into speech.
+
+### Benefits
+
+* Audio learning
+* Faster revision
+* Hands-free studying
+
+---
+
+## 🎥 YouTube Summarizer
+
+Summarize educational YouTube videos using AI.
+
+### Powered By
+
+* Groq API
+* LLaMA 3.3 70B
+
+---
+
+## 🖼️ AI Image Notes
+
+Generate notes from PDF images and pages.
+
+### Features
+
+* OCR extraction
+* AI summarization
+* Flashcard generation
+* Key-point extraction
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+| Technology     | Usage           |
+| -------------- | --------------- |
+| React 18       | UI Development  |
+| TypeScript     | Type Safety     |
+| Vite           | Build Tool      |
+| Tailwind CSS   | Styling         |
+| Framer Motion  | Animations      |
+| TanStack Query | Data Management |
+| Lucide React   | Icons           |
+
+---
+
+## Backend
+
+| Technology            | Usage          |
+| --------------------- | -------------- |
+| FastAPI               | API Framework  |
+| Python                | Core Language  |
+| FAISS                 | Vector Search  |
+| PyPDF2                | PDF Processing |
+| Sentence Transformers | Embeddings     |
+| Uvicorn               | Server         |
+
+---
+
+## AI Models
+
+| Model             | Purpose             |
+| ----------------- | ------------------- |
+| LLaMA 3.3 70B     | Q&A & Summaries     |
+| BART              | Text Summarization  |
+| BLIP              | Image Understanding |
+| OpenAI Embeddings | Semantic Search     |
+
+---
+
+# 🏗 Architecture
+
+```text
+                ┌──────────────────┐
+                │     User UI      │
+                └────────┬─────────┘
+                         │
+                         ▼
+                ┌──────────────────┐
+                │ React Frontend   │
+                └────────┬─────────┘
+                         │ API Calls
+                         ▼
+                ┌──────────────────┐
+                │ FastAPI Backend  │
+                └────────┬─────────┘
+                         │
+         ┌───────────────┼───────────────┐
+         ▼               ▼               ▼
+
+   PDF Parsing     Vector Search     AI Models
+    (PyPDF2)         (FAISS)      (LLaMA/BART)
 ```
-Semantic-search/
+
+---
+
+# 📂 Project Structure
+
+```bash
+DocMind-AI/
 │
-├── frontend/                          # React + Vite Frontend
+├── frontend/
 │   ├── src/
-│   │   ├── components/               # All React Components
-│   │   │   ├── AIImageNotesMaker.tsx   # PDF to notes with AI
-│   │   │   ├── GPT.tsx                 # DocMind GPT chat
-│   │   │   ├── Header.tsx              # App header with user controls
-│   │   │   ├── KeyPointsExtractor.tsx  # Extract key phrases from PDF
-│   │   │   ├── LoginModal.tsx          # Authentication modal
-│   │   │   ├── MemoryVoiceSummarizer.tsx # Text-to-speech tool
-│   │   │   ├── NotesMaker.tsx          # Notes CRUD operations
-│   │   │   ├── PDFSearchPage.tsx       # PDF upload + semantic search
-│   │   │   ├── PDFSummarizer.tsx       # PDF summarization tool
-│   │   │   ├── Search.tsx              # Search component with highlighting
-│   │   │   ├── Settings.tsx            # App settings & preferences
-│   │   │   ├── Sidebar.tsx             # Navigation sidebar
-│   │   │   ├── ThemeProvider.tsx       # Theme management
-│   │   │   └── YouTubeSummarizer.tsx   # YouTube video summarizer
-│   │   ├── contexts/                  # React Context Providers
-│   │   │   ├── AuthContext.tsx          # Authentication state
-│   │   │   └── SettingsContext.tsx      # App settings state
-│   │   ├── hooks/                     # Custom React Hooks
-│   │   ├── lib/                       # Utility Functions
-│   │   ├── pages/                     # Page Components
-│   │   ├── App.tsx                    # Main App Component
-│   │   ├── index.css                  # Global Styles
-│   │   └── main.tsx                   # Entry Point
-│   ├── public/                        # Static Assets
-│   ├── .env                           # Environment Variables
-│   ├── .gitignore                     # Git Ignore Rules
-│   ├── index.html                     # HTML Template
-│   ├── package.json                   # Dependencies
-│   ├── tsconfig.json                  # TypeScript Config
-│   └── vite.config.js                 # Vite Configuration
+│   │   ├── components/
+│   │   ├── contexts/
+│   │   ├── hooks/
+│   │   ├── pages/
+│   │   ├── App.tsx
+│   │   └── main.tsx
+│   │
+│   ├── public/
+│   └── package.json
 │
-├── backend/                           # FastAPI Backend
-│   ├── models/                       # ML Models & Vector Stores
-│   ├── __pycache__/                  # Python Cache
-│   ├── venv/                         # Python Virtual Environment
-│   ├── embedder.py                   # Text Embedding Service
-│   ├── main.py                       # FastAPI Application
-│   └── requirements.txt              # Python Dependencies
+├── backend/
+│   ├── models/
+│   ├── embedder.py
+│   ├── main.py
+│   └── requirements.txt
 │
-└── README.md                         # Project Documentation
+└── README.md
 ```
 
-# Clone the repository
+---
+
+# ⚡ Quick Start
+
+## Clone Repository
+
+```bash
 git clone https://github.com/yourusername/docmind-ai.git
 cd docmind-ai
+```
 
-# Navigate to frontend directory
+---
+
+## Frontend Setup
+
+```bash
 cd frontend
 
-# Install dependencies
 npm install
 
-# Create environment file
-cp .env.example .env
-
-# Add your Groq API key to .env
-# VITE_GROQ_API_KEY=your_groq_api_key_here
-
-# Start development server
 npm run dev
+```
 
-# Open a new terminal
+Frontend runs on:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## Backend Setup
+
+```bash
 cd backend
 
-# Create and activate virtual environment
 python -m venv venv
+```
 
-# On Windows:
+### Windows
+
+```bash
 venv\Scripts\activate
-# On Mac/Linux:
+```
+
+### Linux / Mac
+
+```bash
 source venv/bin/activate
+```
 
-# Install Python dependencies
+Install dependencies:
+
+```bash
 pip install -r requirements.txt
+```
 
-# Start FastAPI server
+Run server:
+
+```bash
 uvicorn main:app --reload --port 8000
+```
 
-🤝 Contributing
-Fork the repository
+Backend runs on:
 
-Create a feature branch: git checkout -b feature/amazing-feature
+```text
+http://localhost:8000
+```
 
-Commit changes: git commit -m 'Add amazing feature'
+---
 
-Push to branch: git push origin feature/amazing-feature
+# 🔐 Environment Variables
 
-Open a Pull Request
+Create a `.env` file:
 
-Development Guidelines
-Follow TypeScript best practices
+```env
+VITE_GROQ_API_KEY=your_groq_api_key
+```
 
-Use functional components with hooks
+---
 
-Write meaningful commit messages
+# 📸 Screenshots
 
-Test before submitting PR
+Add screenshots here:
 
-Update documentation as needed
+```text
+docs/
+├── home.png
+├── search.png
+├── gpt-chat.png
+├── summarizer.png
+└── notes.png
+```
+
+---
+
+# 🚀 Future Improvements
+
+* User Authentication
+* Cloud PDF Storage
+* Team Collaboration
+* Quiz Generation
+* AI Mind Maps
+* Multi-language Support
+
+---
+
+# 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+
+```bash
+git checkout -b feature/new-feature
+```
+
+3. Commit changes
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push changes
+
+```bash
+git push origin feature/new-feature
+```
+
+5. Open Pull Request
+
+---
+
+# ⭐ Support
+
+If you found this project useful:
+
+⭐ Star the repository
+
+🍴 Fork the project
+
+📢 Share it with others
+
+---
+
+<div align="center">
+
+### Made with ❤️ using React, FastAPI and AI
+
+**DocMind AI — Learn Smarter, Not Harder**
+
+</div>
